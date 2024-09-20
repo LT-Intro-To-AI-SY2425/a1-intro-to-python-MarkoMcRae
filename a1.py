@@ -25,7 +25,12 @@ def absolute(n: int) -> int:
     Returns:
         the absolute value of the passed in number
     """
-    raise NotImplementedError("absolute")
+    if n < 0:
+        return -1 * n 
+    else:
+        return n
+
+ 
 
 
 def factorial(n: int) -> int:
@@ -38,7 +43,10 @@ def factorial(n: int) -> int:
     Returns:
         factorial of the passed in number
     """
-    raise NotImplementedError("factorial")
+    result = 1
+    for x in range(1, n +1)
+        result *= x
+    return result 
 
 
 T = TypeVar("T")
@@ -55,7 +63,7 @@ def every_other(lst: List[T]) -> List[T]:
     Returns:
         a list of every of other item in the original list starting with the first
     """
-    raise NotImplementedError("every_other")
+    return lst[::2]
 
 
 def sum_list(lst: List[int]) -> int:
@@ -68,7 +76,10 @@ def sum_list(lst: List[int]) -> int:
     Returns:
         the sum of the passed in list
     """
-    raise NotImplementedError("sum_list")
+    n = 0
+    for n in lst:
+        total += n
+    return total
 
 
 def mean(lst: List[int]) -> float:
@@ -80,7 +91,10 @@ def mean(lst: List[int]) -> float:
     Returns:
         the mean of the passed in list
     """
-    raise NotImplementedError("mean")
+    total = 1
+    for y in range(len(lst)):
+        total *= lst[y]
+    return total
 
 
 def median(lst: List[int]) -> float:
@@ -95,7 +109,7 @@ def median(lst: List[int]) -> float:
     Returns:
         the median of the passed in list
     """
-    raise NotImplementedError("median")
+    
 
 
 def duck_duck_goose(lst: List[str]) -> List[str]:
@@ -117,7 +131,13 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
     Returns:
         the resulting list after playing duck duck goose
     """
-    raise NotImplementedError("duck_duck_goose")
+    index = 0  # Start counting from the first person
+
+    while len(lst) > 2:
+        index = (index + 2) % len(lst)  # Move to the third person (2 + current index)
+        lst.pop(index)  # Remove that person
+
+    return lst
 
 
 # this line causes the nested code to be skipped if the file is imported instead of run

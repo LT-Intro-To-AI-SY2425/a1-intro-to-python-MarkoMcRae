@@ -14,10 +14,12 @@ Mr. Berg will look at all your files to determine what you have completed.  If t
 
 1. What is your initial thoughts about the python programming language?
 
-
+It is similair but also a bit more complicated than Java for me. I think I will get a better hang of it as the school year goes on but right now.
 
 2. Describe some similarities and differences that you found between python and other programming languages you have used in the past?
 
-
+Some similarities between python and java is how the code runs and similair ways of typing the code. Like same ideas. Differences is that python is much less orderly and maybe to me is a bit looser wheras java is very step by step. Variables and making sure everything is written out.
 
 3. What are some things that you learned through this assignment?
+
+Some things that I learned throughout this assignment is the AI is really helpful in coding. Whether that's creating problems, solving them, in almost everywhay AI is the master of code. 
